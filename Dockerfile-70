@@ -36,6 +36,10 @@ RUN docker-php-ext-install mcrypt
 # Install the PHP pdo_mysql extention
 RUN docker-php-ext-install pdo_mysql
 
+# Install the PHP mysql legacy extentions
+RUN docker-php-ext-install mysql
+RUN docker-php-ext-install mysqli
+
 # Install the PHP pdo_pgsql extention
 RUN docker-php-ext-install pdo_pgsql
 
